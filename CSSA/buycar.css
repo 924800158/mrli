@@ -1,0 +1,820 @@
+
+.buy-step li{
+    width: 315px;
+    color: #7F7F7F;
+    font-size: 15px;
+    line-height: 22px;
+    border-bottom: solid 12px #e5e5e5;
+    margin-right: 2px;
+}
+.buy-step li:nth-child(3){
+    margin-right: 0;
+}
+.buy-step li.active{
+    font-weight: bolder;
+    border-bottom: solid 12px #7F7F7F;
+}
+.get-help{
+    width: 110px;
+    font-size: 16px;
+    padding-bottom: 3px;
+    border-bottom: solid 2px #000;
+}
+.help-list{
+    padding-bottom: 20px;
+    border-bottom: solid 1px #7F7F7F;
+}
+.help-list li a:hover{
+    text-decoration: underline;
+    color: #7F7F7F;
+}
+.order-list li p{
+    font-size: 16px;
+    line-height: 36px;
+}
+.order-list li a{
+    font-size: 13px;
+    padding: 5px 15px;
+}
+.select-num{
+    margin: 0 auto;
+    width: 50px;
+}
+.select-num dt{
+    margin-right: 2px;
+    width: 24px;
+    height: 22px;
+    line-height: 22px;
+    border: solid 1px #999;
+}
+.select-num dd{
+    width: 24px;
+    height: 10px;
+    line-height: 10px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.select-num dd:nth-of-type(1){
+    margin-bottom: 2px;
+}
+.goods-list-table thead{
+    height: 35px;
+    background: #F2F2F2;
+    border: solid 1px #CCCCCC;
+}
+.goods-list-table thead th{
+    height: 35px;
+    font-weight: normal;
+    border-bottom: solid 1px #CCCCCC;
+    border-top: solid 1px #CCCCCC;
+}
+.goods-list-table input,.goods-list-table img{
+    vertical-align: middle;
+}
+.goods-list-table thead th input{
+    vertical-align: middle;
+}
+.goods-list-table thead th:first-child{
+    border-left: solid 1px #CCCCCC;
+}
+.goods-list-table thead th:last-child{
+    border-right: solid 1px #CCCCCC;
+}
+.goods-color{
+    width: 130px;
+}
+.goods-list-table thead .select-all{
+    padding-left: 10px;
+    text-align: left;
+}
+
+.goods-btn{
+    display: inline-block;
+    padding: 0 10px;
+    background: #414141;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+.goods-list-table .tbody td{
+    padding: 10px 5px;
+    vertical-align: top;
+    text-align: center;
+}
+.goods-box td{
+    padding: 10px;
+    text-align: left;
+}
+.goods-list-table .tbody .tr-btn a{
+    height: 30px;
+    line-height: 30px;
+    border:solid 1px #7F7F7F;
+    color: #7F7F7F;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.goods-list-table .tbody .tr-btn a:hover{
+    background: #CCCCCC;
+    color: black;
+}
+.goods-list-table .tbody .move{
+    width: 100px;
+}
+.goods-list-table .tbody .delete{
+    width: 125px;
+}
+.goods-list-table .tbody{
+    margin-top: -1px;
+}
+.goods-list-table{
+    border-bottom: solid 1px #7F7F7F;
+}
+.goods-list-table .tbody tr:nth-child(1) td{
+    border-top:solid 1px #7F7F7F;
+}
+.goods-list-table .tbody tr:nth-child(1) td:nth-child(1),.goods-list-table .tbody tr:nth-child(2) td:nth-child(1){
+    border-left: solid 1px #7F7F7F;
+}
+.goods-list-table .tbody tr:nth-child(2) td:last-child,.goods-list-table .tbody tr:nth-child(1) td:last-child{
+    border-right: solid 1px #7F7F7F;
+}
+.goods-list-table .tbody tr td img{
+    width:100px;
+    height:150px;
+}
+.table-footer{
+    padding-left: 10px;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background: #F2F2F2;
+    border: solid 1px #7F7F7F;
+}
+.table-footer input{
+    vertical-align: middle;
+}
+.table-footer a{
+    text-decoration: underline;
+    margin-left: 15px;
+}
+
+.settlement table td{
+    padding: 0 5px;
+    height: 30px;
+    line-height: 30px;
+}
+.settlement table tr:nth-child(2),.settlement table tr:nth-child(3){
+    color: #d91e25;
+}
+.settlement table tr:nth-child(4),.settlement table tr:nth-child(5){
+    font-weight: bold;
+}
+.settlement table tr span{
+    display:inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("../images/TakeIntegral.jpg") no-repeat;
+}
+.go-shopping li:nth-child(1) a{
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    color: #7F7F7F;
+    border:solid 1px #7F7F7F;
+}
+.go-shopping li:nth-child(2) a{
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+}
+.go-shopping li:nth-child(2) a:hover{
+    background: #4c4c4c;
+}
+.go-shopping li:nth-child(1) a:hover{
+    color: #000;
+    background: #CCCCCC;
+}
+.empty-buy-car h3{
+    font-size: 24px;
+    line-height: 30px;
+}
+.empty-buy-car{
+    display: none;
+    border-bottom: solid 1px #D1D1D1;
+}
+.empty-buy-car a{
+    display: block;
+    margin: 20px auto;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+}
+.login-popup{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.4);
+    z-index: 999;
+}
+.login-popup .login-box{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    padding: 10px;
+    margin: -220px 0 0 -385px;
+    width: 770px;
+    height: 440px;
+    background: white;
+    border:solid 4px #000000;
+}
+.login-box h4{
+    margin: 15px 0;
+    font-size: 16px;
+}
+.login-table{
+    width: 270px;
+}
+.login-table tr:nth-child(1) td:nth-child(1){
+    width: 40px;
+}
+.login-table tr td{
+    height: 35px;
+}
+.login-table tr td .text{
+    height: 26px;
+    padding-left: 5px;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    border:solid 1px #CCCCCC;
+}
+.login-table tr td .text:focus{
+    border:solid 1px rgb(126,160,215);
+}
+.login-table tr td:nth-child(2){
+    width: 120px;
+}
+.login-table tr td .mobile-phone{
+    width: 220px;
+}
+.login-table tr td .verification,.login-table tr td .dynamic-psd{
+    width: 108px;
+}
+.login-table tr td .get-psw{
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+}
+.login-table tr td.toggle{
+    width: 230px;
+}
+.login-table tr td.toggle a{
+    text-decoration: underline;
+}
+.login-table .username-login{
+    display: none;
+}
+.login-table tr td .username,.login-table tr td .password{
+    width: 200px;
+}
+.login-table tr td .remember{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.login-table tr td .forget{
+    text-decoration: underline;
+}
+.login-table tr td .login-btn{
+    width: 66px;
+    height: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0 10px 0;
+}
+.a-hover:hover{
+    background: #4c4c4c;
+}
+.login-left{
+    padding: 0 15px;
+    height: 340px;
+    border-right: solid 1px #000000;
+}
+.login-center{
+    padding: 0 67px 0 15px;
+    margin-right: 15px;
+    height: 340px;
+    border-right: solid 1px #CCCCCC;
+}
+.login-center p{
+    line-height: 20px;
+}
+.login-center .register{
+    margin-top: 50px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+}
+.login-right{
+    padding-top: 30px;
+}
+.login-box .close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: url("../../public/images/msg_bg.png") no-repeat;
+    background-position: 0 -608px;
+    cursor: pointer;
+}
+/*分页*/
+.flip{
+    width: 100%;
+    height:32px;
+    line-height: 32px;
+    text-align: right;
+    font-size: 14px;
+}
+.flip a{
+    border:1px solid #ccc;
+    padding:0 5px;
+}
+/*step2*/
+.order-abstract-table{
+    border: solid 1px #CCCCCC;
+}
+.order-abstract-table thead th{
+    height: 35px;
+    font-weight: normal;
+    border-bottom: solid 1px #CCCCCC;
+    border-top: solid 1px #CCCCCC;
+    background-color: #F5F5F5;
+    /*font-weight: bold;*/
+}
+.order-abstract-table thead{
+    height: 35px;
+    background: #F5F5F5;
+    border: solid 1px #CCCCCC;
+}
+.order-abstract-table tbody{
+    height: 35px;
+    border: solid 1px #CCCCCC;
+}
+.order-abstract-table tbody td{
+    text-align: center;
+    padding: 10px;
+}
+/*table.order-abstract-table{*/
+    /*border-left: 1px solid #CCCCCC;*/
+    /*box-sizing: border-box;*/
+/*}*/
+
+.goods-img img{
+    vertical-align: middle;
+    width: 120px;
+    height: 180px;
+}
+
+.receipt-address{
+    display: none;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #b2b2b2;
+}
+.receipt-address h4.get-help{
+    border: none;
+}
+.receipt-address ul li{
+    margin-bottom: 10px;
+}
+.receipt-address ul li p{
+    line-height: 20px;
+}
+.receipt-address ul li .address-text{
+    display: inline-block;
+    padding-left: 5px;
+    width: 260px;
+    height: 26px;
+    border: #b2b2b2 solid 1px;
+}
+.receipt-address ul li select.error{
+    border: solid 1px #D91E25;
+}
+.receipt-address ul li .address-text.error{
+    border: solid 1px #D91E25;
+}
+.receipt-address ul li .address-text:focus{
+    border:solid 1px #A6C8FF;
+    box-shadow: 0 0 1px 1px #A6C8FF;
+}
+.receipt-address ul li .province{
+    width: 130px;
+}
+.receipt-address ul li .select-city{
+    height: 22px;
+}
+.receipt-address ul li .save-address{
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 35px;
+}
+.border-bottom20 {
+    padding-bottom: 20px;
+    border-bottom: solid 1px #b2b2b2;
+}
+.people-info h5{
+    font-size: 16px;
+    line-height: 25px;
+}
+.people-show{
+    display: none;
+}
+.people-info p{
+    padding-left: 5px;
+    color: black;
+}
+.people-info p span{
+    padding: 0 10px;
+}
+.people-info .express input{
+    vertical-align: middle;
+}
+.people-info .express label{
+    margin-right: 15px;
+}
+.discount .discount-text{
+    width: 220px;
+    height: 26px;
+}
+.discount .confirm{
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.payment-table td{
+    height: 45px;
+    width: 180px;
+}
+.payment-table td span{
+    vertical-align: middle;
+    display: inline-block;
+    width: 130px;
+    height: 30px;
+    background: url("../../public/images/payment.png") no-repeat;
+}
+.payment-table td .aliPay{
+    background-position: 0 0;
+}
+.payment-table td .unionPay{
+    background-position: 0 -30px;
+}
+.payment-table td .ABCPay{
+    background-position: 0 -60px;
+}
+.payment-table td .CITICPay{
+    background-position: 0 -90px;
+}
+.payment-table td .CIBPay{
+    background-position: 0 -120px;
+}
+.payment-table td .GDBPay{
+    background-position: 0 -150px;
+}
+.payment-table td .BCPay{
+    background-position: 0 -180px;
+}
+.payment-table td .CCBPay{
+    background-position: 0 -210px;
+}
+
+.payment-table td .CMBPay{
+    background-position: 0 -240px;
+}
+.payment-table td .SPDBPay{
+    background-position: 0 -270px;
+}
+.payment-table td .communicationPay{
+    background-position: 0 -300px;
+}
+.payment-table td .CEBPay{
+    background-position: 0 -330px;
+}
+.payment-table td .ICBCPay{
+    background-position: 0 -360px;
+}
+.payment-table td .postPay{
+    background-position: 0 -390px;
+}
+.payment-table td .otherPay{
+    line-height: 20px;
+    background: none;
+}
+.invoice span{
+    display: none;
+}
+.notes span{
+    display: inline-block;
+}
+.notes strong{
+    vertical-align: top;
+    display: inline-block;
+}
+.safe-pay .continue{
+    padding: 0 20px;
+    height: 30px;
+    line-height: 30px;
+}
+.addressee li{
+    padding: 5px 0;
+}
+.addressee li:hover{
+    font-size: 16px;
+}
+.addressee li em{
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: solid 1px #999;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.addressee li .selected{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin: -3px 0 0 -3px;
+    width: 6px;
+    height: 6px;
+    background: #00A1EA;
+    border-radius: 50%;
+}
+.addressee li em i.active{
+    display: block;
+}
+.addressee li>i{
+    /*display: none;*/
+    padding-left:10px;
+}
+.addressee li span{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.addressee li input{
+    vertical-align: middle;
+}
+.btn-box a{
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+#payment-bill-box{
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    display: none;
+}
+#payment-bill-box .opacity{
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:0.6;
+    position:absolute;
+    left:0;
+    top:0;
+}
+#payment-bill{
+    width:400px;
+    height:400px;
+    border:2px solid black;
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    background-color: #fff;
+    padding:10px;
+    text-align: center;
+}
+#payment-bill-info{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+#payment-logo{
+    padding-top:70px;
+}
+.payment-bill-opacity{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background:#fff;
+    /*opacity:0.6;*/
+    display: none;
+}
+.payment-bill-opacity img{
+    width:100%;
+}
+#payment-bill p{
+    height:30px;
+    line-height: 30px;
+}
+.payment-info{
+    height:30px;
+   overflow: hidden;
+    width:220px;
+    margin:0px auto;
+}
+/*支付*/
+.payment-method a{
+    display: block;
+    width:190px;
+    height:70px;
+    line-height: 46px;
+    font-size:20px;
+    font-weight: bold;
+    color:#000;
+    background-color: #fff;
+}
+.payment-method{
+    position: relative;
+}
+#paymentOpc{
+    position: absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:-17px;
+    background: #000000;
+    opacity: .7;
+    display: none;
+
+}
+.wechat{
+    background: url("../../buyCar/images/weixinpay.jpg") no-repeat 2px center;
+}
+.alipay{
+    background: url("../../buyCar/images/Alipay.jpg") no-repeat center;
+}
+.col-red{
+    color: red;
+    font-weight: bold;
+}
+.paymentBillBclose{
+    width:30px;
+    height:30px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.paymentBillBclose span {
+    float: left;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #000;
+    background: url(../images/subOrdClose.png) no-repeat 3px 3px;
+    margin-top: 3px;
+}
+/*内购快递  besos*/
+.staffExpress{
+    width: 100%;
+    display: inline-block;
+    border-bottom: solid 1px #b2b2b2;
+    padding-bottom: 10px;
+    display: none;
+}
+.staffExpress ul{
+    width: 100%;
+}
+.staffExpress ul li{
+    float: left;
+    margin-right: 30px;
+    font-size: 14px;
+}
+.staffExpress ul li label{
+    vertical-align: middle;
+}
+/*优惠券*/
+.couponTltle span:nth-child(1){
+    border:1px solid red;
+    padding:2px;
+}
+.couponBox{
+    cursor: pointer;
+}
+.turnLeft{
+    padding-left:16px;
+    background: url("../images/turnLeft.png") no-repeat 0 0;
+}
+/*折扣优惠*/
+.discount li{
+    font-size: 16px;
+}
+.discount li{
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.discount li span{
+    min-height: 30px;
+    line-height: 30px;
+}
+.discount li .disTitle{
+    padding: 0 5px;
+    background: #DA1B1E;
+    color: #fff;
+}
+
+.disExplain{
+    color: #DA1B1E;
+}
+.discount li .disBtn{
+    background: #000000;
+    color: #ffffff;
+    width:96px;
+    text-align: center;
+    cursor: pointer;
+}
+.discount li .disBtn:hover{
+    background: #4d4d4d;
+}
+
+/*选择活动券弹窗*/
+.voucherBox{
+display: none;
+}
+.voucherOpacity{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: #000;
+    opacity: .7;
+}
+.voucherInfo{
+    background: #fff;
+    position: fixed;
+    width: 400px;
+    min-height: 110px;
+    top: 34%;
+    left: 50%;
+    margin-left: -200px;
+    padding-bottom:20px;
+}
+.voucherTitle{
+    font-size: 20px;
+    height:36px;
+    line-height: 36px;
+    text-align: center;
+}
+.voucherNum{
+    width:100%;
+    overflow: hidden;
+}
+.voucherNum li{
+    float: left;
+    width:50%;
+    min-height:32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+.voucherBtn{
+    padding:0 20px;
+}
+.voucherBtn span{
+    width:100px;
+    height:34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 16px;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.voucherBtn span:hover{
+    opacity: .7;
+}
+.activeVoucher{
+    color: red;
+}

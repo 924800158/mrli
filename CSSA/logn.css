@@ -1,0 +1,164 @@
+
+.signpost {
+
+    line-height: 27px;
+}
+
+.login-box h2 {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    background: #000000;
+    font-size: 25px;
+}
+.login-wrapper{
+    margin:20px auto;
+    width: 420px;
+    overflow: hidden;
+}
+.login-wrapper h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.login-wrapper .username input,.employee-num input{
+    padding-left: 5px;
+    box-sizing: border-box;
+    width: 238px;
+    height: 25px;
+    line-height: 25px;
+    border: solid 1px #ccc;
+}
+.login-init{
+    position: relative;
+}
+.login-init .security{
+    margin-left:63px;
+    overflow: hidden;
+    display: none;
+    /*display: block;*/
+}
+.login-init .security input{
+    padding-left: 5px;
+    box-sizing: border-box;
+    width: 110px;
+    height: 25px;
+    line-height: 25px;
+    border: solid 1px #ccc;
+    float: left;
+    margin-right:5px;
+}
+
+.login-wrapper input:focus {
+    border: #7fa1d8 solid 1px;
+}
+.login-wrapper .num-width{
+    display: inline-block;
+    width: 60px;
+}
+.login-wrapper .verification input, .login-wrapper .password input {
+    width: 108px;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    
+}
+
+.login-wrapper .verification {
+    margin: 10px 0 10px 56px;
+}
+.employee-num{
+    display: none;
+}
+.get-msg-btn {
+    display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    background: #000000;
+    color: white;
+    width: 118px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-wrapper form p {
+    line-height: 20px;
+    margin: 10px 0 10px 60px;
+    color: #999;
+}
+.login-wrapper input.error{
+    border: solid 1px #d91e25;
+}
+.login-wrapper form p a {
+    color: #d91e25;
+}
+
+.login-wrapper .login-btn {
+    margin-left: 60px;
+    width: 66px;
+    height: 30px;
+    background: #000000;
+    color: white;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.login-wrapper .login-btn:hover {
+    background: #595959;
+}
+
+.login-wrapper .tip {
+    font-size: 12px;
+    color: #999;
+    padding-top: 10px;
+}
+
+.login-mob{
+    display: none;
+}
+.login-mob table tr:nth-child(1) td:nth-child(1){
+    width: 70px;
+}
+.mobil-text{
+    width: 210px;
+    height: 24px;
+    border: solid 1px #b2b2b2;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+.login-mob table tr td{
+    padding-bottom: 10px;
+}
+.login-mob table .dynamic{
+    text-decoration: underline;
+}
+.border{
+    border: solid 1px #7fa1d8;
+}
+.border-red{
+    border: solid 1px #d91e25;
+}
+.mobil-login{
+    display: none;
+    padding-left: 20px;
+}
+.remember-psw{
+    padding-left: 60px;
+}
+.msg-img{
+    display: inline-block;
+}
+.forget-psw{
+    display: inline-block;
+    margin-left: 50px;
+}
+.problemMailbox{
+    display: none;
+}

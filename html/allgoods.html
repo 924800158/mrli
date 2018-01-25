@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="UTF-8">
+			<title>JACK&amp;JONES中国官方购物网站</title>
+			<link rel="icon" href="../img/titlelogo.ico" type="img/x-icon">
+			<link rel="stylesheet" href="../css/de.css">
+			<link rel="stylesheet" href="../css/good.css">
+	</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+	<div class="container">
+				<div class="top-wrap">
+					<div class="top-left">
+									<h3>
+										您的位置：中国/
+										<span>RMB</span>
+									</h3>
+									<div class="flag">
+										<div class="english" title="english"></div>
+										<div class="chinese" title="中文"></div>
+					</div>
+				</div>
+			<div class="logo text-c">
+				<a href="index.html">
+					<img src="../img/logo.jpg" alt="JACK&amp;JONES">
+				</a>
+			</div>
+				<div class="top-right">
+					<h3 class="login" id="loginState">
+						<a href="login.html">登录</a>
+						<select class="logged-in">
+							<option value="1">已登录</option>
+							<option value="0">退出</option>
+						</select>
+					</h3>
+					<a href="shaoppcar.html" class="buy-car" id="buyCarIcon">
+						购物车
+						<span></span>
+					</a>
+					<div class="search">
+						<input type="text" name="search" class="search-text" placeholder="搜索" id="searchText" style="border-color: rgb(153,153,153);">
+						<span class="fa-search fa search-btn" id="searchBtn">
+								&#xe627;
+						</span>
+					</div>
+				</div>
+		</div>
+	<!--导航-->
+	<div class="nav" id="nav">
+		<ul class="fist-nav">
+			<li><a href="index.html">首页</a></li>
+			<li><a href="goodlist.html">所有商品</a>
+				<div class="sub-nav">
+					<ul class="sub-list all-product1">
+						<li>
+							<a href="goodslist1.html">2018年早春新品</a>
+							<ul class="third-list">
+								<li>
+									<a href="#">新品羽绒服</a>
+								</li>
+								<li>
+									<a href="#">新品棉服/外套</a>
+								</li>
+								<li>
+									<a href="#">新品针织衫</a>
+								</li>
+								<li>
+									<a href="#">新品牛仔裤</a>
+								</li>
+								<li>
+									<a href="#">新品休闲裤</a>
+								</li>
+								<li>
+									<a href="#">新品西服</a>
+								</li>
+								<li>
+									<a href="#">新品衬衫</a>
+								</li>
+								<li>
+									<a href="#">新品T恤</a>
+								</li>
+								<li>
+									<a href="#">新品男鞋</a>
+								</li>
+								<li>
+									<a href="#">新品配饰</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="#">内搭上装</a>
+							<ul class="third-list">
+								<li>
+									<a href="#">潮流卫衣</a>
+								</li>
+								<li>
+									<a href="#">保暖针织衫</a>
+								</li>
+								<li>
+									<a href="#">打底衬衫</a>
+								</li>
+								<li>
+									<a href="#">新潮T恤</a>
+								</li>
+							</ul>
+						</li>
+
+
+						<li>
+							<a href="#">精选裤装</a>
+							<ul class="third-list">
+								<li>
+									<a href="#">酷感牛仔裤</a>
+								</li>
+								<li>
+									<a href="#">简约休闲裤</a>
+								</li>
+							</ul>
+						</li>
+
+
+						<li>
+							<a href="#">棉服/外套</a>
+							<ul class="third-list">
+								<li>
+									<a href="#">牛仔夹克/外套</a>
+								</li>
+								<li>
+									<a href="#">毛呢/皮衣</a>
+								</li>
+								<li>
+									<a href="#">休闲西服</a>
+								</li>
+							</ul>
+						</li>
+
+
+						<li>
+							<a href="#">时尚配饰</a>
+							<ul class="third-list">
+								<li>
+									<a href="#">内裤/袜子</a>
+								</li>
+								<li>
+									<a href="#">帽子/围巾/手套</a>
+								</li>
+								<li>
+									<a href="#">腰带/皮带</a>
+								</li>
+								<li>
+									<a href="#">背包/提包</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+			<li>
+				<a href="#">折扣专区</a>
+			</li>
+
+			<li>
+				<a href="#">新品到店</a>
+				<div class="sub-nav">
+					<ul class="sub-list">
+						<li>
+							<a href="#">1月2号上新</a>
+							<ul class="third-list"></ul>
+						</li>
+						<li>
+							<a href="#">1月5号上新</a>
+							<ul class="third-list"></ul>
+						</li>
+						<li>
+							<a href="#">1月9号上新</a>
+							<ul class="third-list"></ul>
+						</li>
+						<li>
+							<a href="#">1月12号上新</a>
+							<ul class="third-list"></ul>
+						</li>
+						<li></li>
+					</ul>
+				</div>
+			</li>
+
+
+			<li>
+				<a href="#">2018Editorial</a>
+				<div class="sub-nav">
+					<ul class="sub-list">
+						<li>
+							<a href="#">2018Essential</a>
+							<ul class="third-list"></ul>
+						</li>
+						<li>
+							<a href="#">2018Core</a>
+							<ul class="third-list"></ul>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+
+			<li>
+				<a href="#">M街头潮流系列</a>
+			</li>
+
+			<li>
+				<a href="#">足球合作系列</a>
+			</li>
+
+			<li>
+				<a href="#">会员中心</a>
+			</li>
+		</ul>
+	</div>
+	<h6 class="signpost mart10 signpostSty">首页/所有商品</h6>
+
+
+	<div class="mart10">
+		<img src="../img/allGoodsList.jpg">
+	</div>
+
+			<!-- 内容区域 -->
+
+		<!-- 	第一个DIV -->
+			<div id="contentbox" class="goods-content ovf mart10">
+				<div class="goods-nav fl_l">
+					<div class="goods-nav-top">
+						<div class="screen color-white">所有商品列表</div>
+						<ul id="asideGoods" class="all-goods-list">
+							<li class="goods-part">
+								<div>
+									<span class="fl_l">2018年早春新品</span>
+									<i class="fl_r">
+										<img src="../img/plus.png">
+									</i>
+								</div>
+								<ol style="display: none;">
+									<li class>
+                                    全部-2018年早春新品
+                                </li>
+                                <li class>
+                                    1月5日上新
+                                </li>
+                                <li class>
+                                    1月12日上新
+                                </li>
+                                <li class>
+                                    1月9日上新
+                                </li>
+                                <li class>
+                                    1月17日上新
+                                </li>
+                                <li class>
+                                    新品到店
+                                </li>
+								</ol>
+							</li>
+
+							<li class="goods-part">
+								<div>
+									<span class="fl_l">夹克/外套</span>
+									<i class="fl_r">
+										<img src="../img/plus.png">
+									</i>
+								</div>
+								<ol style="display: none;">
+									<li class>
+                                    全部-夹克/外套
+                                </li>
+                                <li class>
+                                    风衣外套
+                                </li>
+                                <li class>
+                                    牛仔/夹克外套
+                                </li>
+								</ol>
+							</li>
+
+							<li class="goods-part">
+								<div>
+									<span class="fl_l">保暖针织衫</span>
+									<i class="fl_r">
+										<img src="../img/plus.png">
+									</i>
+								</div>
+								<ol style="display: none;">
+									<li class>
+                                    全部-保暖针织衫
+                                </li>
+								</ol>
+							</li>
+
+							<li class="goods-part">
+								<div>
+									<span class="fl_l">潮流卫衣</span>
+									<i class="fl_r">
+										<img src="../img/plus.png">
+									</i>
+								</div>
+								<ol style="display: none;">
+									<li class>
+                                    全部-潮流卫衣
+                                </li>
+                                <li class>
+                                   潮流卫衣
+                                </li>
+                               
+								</ol>
+							</li>
+
+							<li class="goods-part">
+								<div>
+									<span class="fl_l">牛仔裤</span>
+									<i class="fl_r">
+										<img src="../img/plus.png">
+									</i>
+								</div>
+								<ol style="display: none;">
+									<li class>
+                                    全部-牛仔裤
+                                </li>
+                                <li class>
+                                    含莱卡弹力牛仔裤
+                                </li>
+                                <li class>
+                                    锥腿牛仔裤
+                                </li>
+                                <li class>
+                                    保暖牛仔裤
+                                </li>
+								</ol>
+							</li>
+
+							<li class="goods-part">
+								<div>
+									<span class="fl_l">休闲裤</span>
+									<i class="fl_r">
+										<img src="../img/plus.png">
+									</i>
+								</div>
+								<ol style="display: none;">
+									<li class>
+                                    全部-休闲裤
+                                </li>
+                                <li class>
+                                   棉质休闲裤
+                                </li>
+                                <li class>
+                                    含莱卡弹力休闲裤
+                                </li>
+								</ol>
+							</li>
+
+							<li class="goods-part">
+								<div>
+									<span class="fl_l">衬衫</span>
+									<i class="fl_r">
+										<img src="../img/plus.png">
+									</i>
+								</div>
+								<ol style="display: none;">
+									<li class>
+                                    全部-衬衫
+                                </li>
+                                <li class>
+                                   格纹/条纹衬衫
+                                </li>
+                                <li class>
+                                   保暖/牛仔衬衫
+                                </li>
+								</ol>
+							</li>
+
+							<li class="goods-part">
+								<div>
+									<span class="fl_l">MLMR系列</span>
+									<i class="fl_r">
+										<img src="../img/plus.png">
+									</i>
+								</div>
+								<ol style="display: none;">
+									<li class>
+                                    全部-MLMR系列
+                                </li>
+                                <li class>
+                                    M系列
+                                </li>
+								</ol>
+							</li>
+
+							<li class="goods-part">
+								<div>
+									<span class="fl_l">西服</span>
+									<i class="fl_r">
+										<img src="../img/plus.png">
+									</i>
+								</div>
+								<ol style="display: none;">
+									<li class>
+                                    全部-西服
+                                </li>
+                                <li class>
+                                    格调西服
+                                </li>
+								</ol>
+							</li>
+
+							<li class="goods-part">
+								<div>
+									<span class="fl_l">男鞋</span>
+									<i class="fl_r">
+										<img src="../img/plus.png">
+									</i>
+								</div>
+								<ol style="display: none;">
+									<li class>
+                                    全部-男鞋
+                                </li>
+                                <li class>
+                                   休闲运动鞋
+                                </li>
+                                <li class>
+                                   板鞋
+                                </li>
+								</ol>
+							</li>
+
+							<li class="goods-part">
+								<div>
+									<span class="fl_l">配饰</span>
+									<i class="fl_r">
+										<img src="../img/plus.png">
+									</i>
+								</div>
+								<ol style="display: none;">
+									<li class>
+                                    全部-配饰
+                                </li>
+                                <li class>
+                                   内裤/袜子
+                                </li>
+                                <li class>
+                                   腰带/皮带
+                                </li>
+                                <li class>
+                                   背包/提包
+                                </li>
+                                <li class>
+                                    帽子/围巾/手套
+                                </li>
+								</ol>
+							</li>
+
+							<li class="goods-part">
+								<div>
+									<span class="fl_l">潮品换购</span>
+									<i class="fl_r">
+										<img src="../img/plus.png">
+									</i>
+								</div>
+								<ol style="display: none;">
+									<li class>
+                                    全部-潮品换购
+                                </li>
+                                <li class>
+                                   热销羽绒服/棉服
+                                </li>
+                                <li class>
+                                    热销毛呢/皮衣
+                                </li>
+                                <li class>
+                                   热销卫衣/针织衫
+                                </li>
+                                <li class>
+                                    热销裤装
+                                </li>
+								</ol>
+							</li>
+
+							<li class="goods-part">
+								<div>
+									<span class="fl_l">精彩品类</span>
+									<i class="fl_r">
+										<img src="../img/plus.png">
+									</i>
+								</div>
+								<ol style="display: none;">
+									<li class>
+                                    全部-精彩品类
+                                </li>
+                                <li class>
+                                   上装
+                                </li>
+                                <li class>
+                                   裤装
+                                </li>
+                                <li class>
+                                    T恤
+                                </li>
+								</ol>
+							</li>
+
+							<li class="goods-part">
+								<div>
+									<span class="fl_l">羽绒服/棉服</span>
+									<i class="fl_r">
+										<img src="../img/plus.png">
+									</i>
+								</div>
+								<ol style="display: none;">
+									<li class>
+                                    全部-羽绒服/棉服
+                                </li>
+                                <li class>
+                                    羽绒服
+                                </li>
+                                <li class>
+                                    棉服
+                                </li>
+								</ol>
+							</li>
+
+							<li class="goods-part">
+								<div>
+									<span class="fl_l">折扣专区</span>
+									<i class="fl_r">
+										<img src="../img/plus.png">
+									</i>
+								</div>
+								<ol style="display: none;">
+									<li class>
+                                    全部-折扣专区
+                                </li>
+								</ol>
+							</li>
+
+							<li class="goods-part">
+								<div>
+									<span class="fl_l">折扣热销商品</span>
+									<i class="fl_r">
+										<img src="../img/plus.png">
+									</i>
+								</div>
+								<ol style="display: none;">
+									<li class>
+                                    全部-折扣热销商品
+                                </li>
+                                <li class>
+                                    五折衬衫
+                                </li>
+                                <li class>
+                                   五折专区
+                                </li>
+                                <li class>
+                                    七折专区
+                                </li>
+                                <li class>
+                                    五折夹克/外套
+                                </li>
+                                <li class>
+                                   五折毛呢/皮衣
+                                </li>
+                                <li class>
+                                   五折休闲裤
+                                </li>
+                                 <li class>
+                                   五折针织衫
+                                </li>
+                                 <li class>
+                                   五折配饰
+                                </li>
+                                 <li class>
+                                   五折卫衣/T恤
+                                </li>
+                                 <li class>
+                                   五折羽绒服/棉服
+                                </li>
+                                 <li class>
+                                   五折男鞋
+                                </li>
+								</ol>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			<!-- 第二个div -->
+				<div id="goodsBox" class="good-list fl_r">
+					<div class="goods-list-top ovf">
+						<div id="collocation" class="collocation fl_l text-c marr30">搭配</div>
+
+						<div class="sort fl_l marr30">
+								排序根据：
+								<select name="goodsSort" id="sortType">
+									<option value="1">点击量</option>
+									<option value="2">价格</option>
+									<option value="3">销售量</option>
+									<option value="4">上架时间</option>
+								</select>
+						</div>
+
+						<div class="fl_l marr30">
+							排序规则：
+							<select name="condition" id="condition" disabled="disabled">
+								<option value="desc">倒叙</option>
+								<option value="asc">升序</option>
+							</select>
+						</div>
+
+						<div class="fl_r pageNum">
+							<strong>
+								<span>986</span>
+								个结果
+							</strong>
+						</div>
+
+					
+				
+
+					<div class="goods-list-content ovf mart20">
+						<ul id="goodsListBox" class="goods-list-wrapper ovf">
+
+							<li class="fl_l ovf">
+								<div id="list-car">
+									<a href="javascript:;">
+										<img src="../img/list_car.png" alt>
+									</a>
+								</div>
+
+								<div class="goods-img">
+
+									<a href="details.html">
+										<img src="../img/217427506E00_p3.jpg" data-true="../img/217427506E00_p1.jpg" data-toggle="../img/217427506E00_p1.jpg">
+									</a>
+									<span class="bg-color-black color-white">快速查看</span>
+								</div>
+
+								<a href="#" class="text-c block mart20 goods-tip">顺滑光泽防风立领男装冬季时尚夹克羽绒服外套</a>
+
+								<p class="text-c mart5"></p>
+							</li>
+
+							<li class="fl_l ovf">
+								<div id="list-car">
+									<a href="javascript:;">
+										<img src="../img/list_car.png" alt>
+									</a>
+								</div>
+
+								<div class="goods-img">
+
+									<a href="#">
+										<img src="../img/217425513F12_p7.jpg" data-true="../img/217425513F12_p7.jpg" data-toggle="../img/217425513F12_p1.jpg">
+									</a>
+									<span class="bg-color-black color-white">快速查看</span>
+								</div>
+
+								<a href="#" class="text-c block mart20 goods-tip">秋男含羊毛条纹拼色圆领毛衣针织衫</a>
+
+								<p class="text-c mart5"></p>
+							</li>
+
+							
+							<li class="fl_l ovf">
+								<div id="list-car">
+									<a href="javascript:;">
+										<img src="../img/list_car.png" alt>
+									</a>
+								</div>
+
+								<div class="goods-img">
+
+									<a href="#">
+										<img src="../img/217432504E37_p7.jpg" data-true="../img/217432504E37_p7.jpg" data-toggle="../img/217432504E37_p1.jpg">
+									</a>
+									<span class="bg-color-black color-white">快速查看</span>
+								</div>
+
+								<a href="#" class="text-c block mart20 goods-tip">JackJones杰克琼斯秋男舒适高弹原色修身牛仔裤长裤JO|217432504</a>
+
+								<p class="text-c mart5"></p>
+							</li>
+
+							<li class="fl_l ovf">
+								<div id="list-car">
+									<a href="javascript:;">
+										<img src="../img/list_car.png" alt>
+									</a>
+								</div>
+
+								<div class="goods-img">
+
+									<a href="#">
+										<img src="../img/217412523E06_p7.jpg" data-true="../img/217412523E06_p7.jpg" data-toggle="../img/217412523E06_p1.jpg">
+									</a>
+									<span class="bg-color-black color-white">快速查看</span>
+								</div>
+
+								<a href="#" class="text-c block mart20 goods-tip">休闲罗纹棒球领男装秋冬短款羽绒服</a>
+
+								<p class="text-c mart5"></p>
+							</li>
+
+							<li class="fl_l ovf">
+								<div id="list-car">
+									<a href="javascript:;">
+										<img src="../img/list_car.png" alt>
+									</a>
+								</div>
+
+								<div class="goods-img">
+
+									<a href="#">
+										<img src="../img/217425509E40_p7.jpg" data-true="../img/217425509E40_p7.jpg" data-toggle="../img/217425509E40_p1.jpg">
+									</a>
+									<span class="bg-color-black color-white">快速查看</span>
+								</div>
+
+								<a href="#" class="text-c block mart20 goods-tip">秋男含羊毛纯色罗纹套头针织衫毛衣</a>
+
+								<p class="text-c mart5"></p>
+							</li>
+
+							<li class="fl_l ovf">
+								<div id="list-car">
+									<a href="javascript:;">
+										<img src="../img/list_car.png" alt>
+									</a>
+								</div>
+
+								<div class="goods-img">
+
+									<a href="#">
+										<img src="../img/217332590J3Z_p7.jpg" data-true="../img/217332590J3Z_p7.jpg" data-toggle="../img/217332590J3Z_p1.jpg">
+									</a>
+									<span class="bg-color-black color-white">快速查看</span>
+								</div>
+
+								<a href="#" class="text-c block mart20 goods-tip">男装秋季舒适纯棉修身直筒牛仔裤</a>
+
+								<p class="text-c mart5"></p>
+							</li>
+
+							<li class="fl_l ovf">
+								<div id="list-car">
+									<a href="javascript:;">
+										<img src="../img/list_car.png" alt>
+									</a>
+								</div>
+
+								<div class="goods-img">
+
+									<a href="#">
+										<img src="../img/217412528E40_p7.jpg" data-true="../img/217412528E40_p7.jpg" data-toggle="../img/217412528E40_p1.jpg">
+									</a>
+									<span class="bg-color-black color-white">快速查看</span>
+								</div>
+
+								<a href="#" class="text-c block mart20 goods-tip">灰鸭绒连帽立领男装夹克羽绒服外套秋冬</a>
+
+								<p class="text-c mart5"></p>
+							</li>
+
+
+						
+							<li class="fl_l ovf">
+								<div id="list-car">
+									<a href="javascript:;">
+										<img src="../img/list_car.png" alt>
+									</a>
+								</div>
+
+								<div class="goods-img">
+
+									<a href="#">
+										<img src="../img/217412514F15_p7.jpg" data-true="../img/217412514F15_p7.jpg" data-toggle="../img/217412514F15_p1.jpg">
+									</a>
+									<span class="bg-color-black color-white">快速查看</span>
+								</div>
+
+								<a href="#" class="text-c block mart20 goods-tip">杰克琼斯休闲连帽立领男装秋短款羽绒服</a>
+
+								<p class="text-c mart5"></p>
+							</li>
+
+							<li class="fl_l ovf">
+								<div id="list-car">
+									<a href="javascript:;">
+										<img src="../img/list_car.png" alt>
+									</a>
+								</div>
+
+								<div class="goods-img">
+
+									<a href="#">
+										<img src="../img/217321518E39_p7.jpg" data-true="../img/217321518E39_p7.jpg" data-toggle="../img/217321518E39_p1.jpg">
+									</a>
+									<span class="bg-color-black color-white">快速查看</span>
+								</div>
+
+								<a href="#" class="text-c block mart20 goods-tip">秋男防风连帽可调节休闲风衣外套</a>
+
+								<p class="text-c mart5"></p>
+							</li>
+
+							<li class="fl_l ovf">
+								<div id="list-car">
+									<a href="javascript:;">
+										<img src="../img/list_car.png" alt>
+									</a>
+								</div>
+
+								<div class="goods-img">
+
+									<a href="#">
+										<img src="../img/217197501E03_p7.jpg" data-true="../img/217197501E03_p7.jpg" data-toggle="../img/217197501E03_p1.jpg">
+									</a>
+									<span class="bg-color-black color-white">快速查看</span>
+								</div>
+
+								<a href="#" class="text-c block mart20 goods-tip">男装春季大容量组合手提包旅行包</a>
+
+								<p class="text-c mart5"></p>
+							</li>
+
+							<li class="fl_l ovf">
+								<div id="list-car">
+									<a href="javascript:;">
+										<img src="../img/list_car.png" alt>
+									</a>
+								</div>
+
+								<div class="goods-img">
+
+									<a href="#">
+										<img src="../img/217332566E39_p7.jpg" data-true="../img/217332566E39_p7.jpg" data-toggle="../img/217332566E39_p1.jpg">
+									</a>
+									<span class="bg-color-black color-white">快速查看</span>
+								</div>
+
+								<a href="#" class="text-c block mart20 goods-tip">男装秋季莱卡弹力纯色牛仔裤长裤</a>
+
+								<p class="text-c mart5"></p>
+							</li>
+
+							<li class="fl_l ovf">
+								<div id="list-car">
+									<a href="javascript:;">
+										<img src="../img/list_car.png" alt>
+									</a>
+								</div>
+
+								<div class="goods-img">
+
+									<a href="#">
+										<img src="../img/217332536J3Z_p7.jpg" data-true="../img/217332536J3Z_p7.jpg" data-toggle="../img/217332536J3Z_p1.jpg">
+									</a>
+									<span class="bg-color-black color-white">快速查看</span>
+								</div>
+
+								<a href="#" class="text-c block mart20 goods-tip">男装秋莱卡弹力休闲直筒牛仔长裤</a>
+
+								<p class="text-c mart5"></p>
+							</li>
+						</ul>
+
+						<div class="water-bar">点击加载更多</div>
+
+						<div class="fast-goodscar">
+							<img src="../img/success-car1.png" alt style="display: none;">
+							<img src="../img/repeat-car1.png" alt style="display: none;">
+						</div>
+						
+					</div>
+					
+				
+		<!-- 第三个div -->
+				<div class="goods-popup"></div>
+
+			</div>
+
+
+</div>
+	<!-- 	底部和固定定位	 -->
+		<div class="suspensionFix">
+		<ul>
+			<li class="susBuyCar" id="susBuyCar" onclick="jumpBuyCar()">
+				<a href="javascript:;">购物车</a>
+				<div class="susBuyCarNum" id="susBuyCarNum"></div>
+			</li>
+			<li class="susOnline" id="susOnline" onclick="OPE()">
+				<a href="javascript:;">客服热线</a>
+			</li>
+			<li class="susMemCenter" id="susMemCenter" onclick="jumpMemCenter()">
+				<a href="javascript:;">会员中心</a>
+			</li>
+			<li class="susJoinUs" id="susJoinUs">
+				<a href="javascript:;">加入我们</a>
+				<div class="rightCode"></div>
+			</li>
+			<li class="susGotop" id="susGotop" style="display: list-item;">
+				<a href="javascript:scroll(0,0)">回到顶部</a>
+			</li>
+		</ul>
+	</div>
+	<!-- footer -->
+	<div class="footer">
+		<div class="footer-nav">
+			<ul id="footerNavList">
+				<li class="fl_l">
+					<a href="https://www.jackjones.com.cn/">首页</a>
+				</li>
+				<li class="fl_l">
+					<a href="javascript:;">所有商品</a>
+				</li>
+				<li class="fl_l">
+					<a href="javascript:;">折扣专区</a>
+				</li>
+				<li class="fl_l">
+					<a href="javascript:;">新品到店</a>
+				</li>
+				<li class="fl_l">
+					<a href="javascript:;">2018Editorial</a>
+				</li>
+				<li class="fl_l">
+					<a href="javascript:;">M街头潮流系列</a>
+				</li>
+				<li class="fl_l">
+					<a href="javascript:;">足球合作系列</a>
+				</li>
+				<li class="fl_l">
+					<a href="javascript:;">会员中心</a>
+				</li>
+			</ul>
+		</div>
+
+		<table class="text-c mart30 footer-table" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr class="table-logo">
+					<td class="text-c">
+						<a href="http://www.veromoda.com.cn">
+							<img src="../img/vmLogo.jpg" alt>
+						</a>
+					</td>
+					<td>
+						<a href="http://www.only.cn">
+							<img src="../img/onlyLogo.jpg" alt>
+						</a>
+					</td>
+					<td>
+						<a href="http://www.selected.com.cn">
+							<img src="../img/selLogo.jpg" alt>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<a href="#">
+							<img src="../img/besLOGO.jpg">
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">© 2013 Bestseller. All Rights Reserved 津ICP备12007886号 - 1</td>
+				</tr>
+				<tr>
+					<td colspan="3">绫致时装（天津）有限公司</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="../js/index.js"></script>
+ 
+
+	
+	
