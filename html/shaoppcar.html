@@ -317,7 +317,7 @@
         			<td class="carGoodsTotalPrice">
         				<p class="total-price">
         					￥
-        					<span>499.5</span>
+        					<span id="totalprice">499.5</span>
         				</p>
         			</td>
         		</tr>
@@ -478,28 +478,33 @@
 	var allgoodsprice=$("allgoodsprice").innerHTML;
 	var pageup=$("pageup").innerHTML;
 	var shoulegoodsprice=$("shoulegoodsprice").innerHTML;
+	var totalprice=$("totalprice").innerHTML;
 		$("pageup").onclick=function(){
 			goodsnum++;
 			$("goodsnum").innerHTML=goodsnum;
 			allgoodsprice=parseFloat(price)*parseFloat(goodsnum);
+			$("totalprice").innerHTML=allgoodsprice;
 			$("allgoodsprice").innerHTML=allgoodsprice;
 			$("shoulegoodsprice").innerHTML=allgoodsprice;
 		}
+
 		$("pagedown").onclick=function(){
 			goodsnum--;
-			if($("goodsnum")>=0){
 				$("goodsnum").innerHTML=goodsnum;
 				allgoodsprice=parseFloat(price)*parseFloat(goodsnum);
 				$("allgoodsprice").innerHTML=allgoodsprice;
+				$("totalprice").innerHTML=allgoodsprice;
 				$("shoulegoodsprice").innerHTML=allgoodsprice;
-			}else{
-				$("goodsnum").innerHTML=0;
-				$("allgoodsprice").innerHTML=0;
-				$("shoulegoodsprice").innerHTML=0;
+				if(goodsnum<=0){
+					$("goodsnum").innerHTML=0;
+					$("allgoodsprice").innerHTML=0;
+					$("totalprice").innerHTML=0;
+					$("shoulegoodsprice").innerHTML=0;
+				}
 			}
-		}
-				var choce=$("chocesome");
-				console.log(choce);
+		
+			
+			
 			
 </script>
  

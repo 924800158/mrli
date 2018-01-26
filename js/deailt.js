@@ -33,9 +33,8 @@ window.onload = function () {
         var e = ev || window.event;
 
         var
-            iL = e.clientX - oEnlargeBox.offsetLeft - oShadow.offsetWidth / 2;
-            iT = e.clientY - oEnlargeBox.offsetTop  - oShadow.offsetHeight / 2;
-
+            iL = e.clientX - oEnlargeBox.offsetLeft -oMiddleBox.offsetLeft - oShadow.offsetWidth / 2;
+            iT = e.clientY - oEnlargeBox.offsetTop  -oMiddleBox.offsetTop+oShadow.offsetHeight / 2;
 
         iL = Math.max(iL , 0);
         iT = Math.max(iT , 0);
@@ -58,6 +57,7 @@ window.onload = function () {
     });
     oMiddleBox.addEventListener('mouseenter', () => {
         oLargeBox.style.display = 'block';
+        oShadow.style.display = 'block';
           
     });
     oMiddleBox.addEventListener('mouseleave', () => {
@@ -69,3 +69,9 @@ window.onload = function () {
 $("anjianbtn").onclick=function(){
     $("sizeNum").style.display = 'block';
 }
+(function($){
+    jQuery.noConflict();
+     $('#anjianbtn').click(function(){
+        $("#sizeNum").toggleClass('in-out').stop().toggle('normal');
+     });   
+})(jQuery);

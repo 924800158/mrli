@@ -7,6 +7,11 @@
 			<link rel="stylesheet" href="../css/de.css">
 			<link rel="stylesheet" href="../css/good.css">
 	</head>
+	<style>
+		.apper{
+			display: block;
+		}
+	</style>
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 	<div class="container">
 				<div class="top-wrap">
@@ -343,7 +348,7 @@
 										<img src="../img/plus.png">
 									</i>
 								</div>
-								<ol style="display: none;">
+								<ol class="apper">
 									<li class>
                                     全部-休闲裤
                                 </li>
@@ -982,7 +987,16 @@
 <script src="../js/jquery-1.8.3.js"></script>
 <script type="text/javascript">
     $(function () {
-        $.ajax({
+	$('.goods-part').has('ol').click(function(){
+			 $(this).children().eq(1).toggleClass('apper');
+		});
+
+	// $('.goods-part').click(function(ev){
+	// 	ev.stopPropagation();
+	// }).has('i').has('img').attr('src','../img/plus.png').click(function(){
+	// 	$(this).toggleClass('combine').children('ul').stop(true).toggle('normal');
+	// });
+	        $.ajax({
            type:"get",
             url:"getGoodsList.php",
             success:function (data) {
