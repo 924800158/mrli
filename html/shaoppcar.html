@@ -259,17 +259,17 @@
                 </tr>
             </thead>
             <tbody>
-            	<tr class="goods-box">
+            	<tr class="goods-box" >
               		  <td>
               		  	<input type="checkbox" id="selectGoods" class="goods-box" checked="">
               		  	<label for="selectGoods" class="goods-btn color-white">商品</label>
               		  </td>
            		 </tr>
         	</tbody>
-        	<tbody class="tbody">
+        	<tbody class="tbody" id="tobody">
         		<tr>
         			<td class="car-img">
-        				<input type="checkbox" class="217412514" checked="">
+        				<input type="checkbox" class="217412514" checked="" id="chocesome">
         				<img src="../img/217427506E00_p1.jpg" alt="" id="217412514E39">
         			</td>
         			<td class="car-title">
@@ -296,12 +296,12 @@
         			</td>
         			<td class="carGoodsNum">
         				<dl class="ovf select-num">
-        					<dt class="fl_l text-c">1</dt>
-        					<dd class="fl_l bg-color-black color-white text-c">
-        						<i class="fa fa-angle-up"></i>
+        					<dt class="fl_l text-c" id="goodsnum">1</dt>
+        					<dd class="fl_l bg-color-black color-white text-c" id="pageup">
+        							∧
         					</dd>
-        					<dd class="fl_l bg-color-black color-white text-c">
-        						<i class="fa fa-angle-down"></i>
+        					<dd class="fl_l bg-color-black color-white text-c" id="pagedown">
+        							∨
         					</dd>
         				</dl>
         				 库存：
@@ -311,7 +311,7 @@
         			<td class="carGoodsUnitPrice">
         				<p class="unit-price">
         					￥
-        					<span data-original="999" data-price="499.5">499.5</span>
+        					<span data-original="999" data-price="499.5" id="dataprice">499.5</span>
         				</p>
         			</td>
         			<td class="carGoodsTotalPrice">
@@ -346,13 +346,13 @@
                     <td>商品总金额：</td>
                     <td>RMB</td>
                     <td>￥</td>
-                    <td class="all-goods-price">499.50</td>
+                    <td class="all-goods-price" id="allgoodsprice">499.50</td>
                 </tr>
                 <tr>
                     <td>应付金额：</td>
                     <td>RMB</td>
                     <td>￥</td>
-                    <td class="all-goods-price">499.50</td>
+                    <td class="all-goods-price" id="shoulegoodsprice">499.50</td>
                 </tr>
                 <tr>
                     <td>花费的积分：</td>
@@ -466,7 +466,42 @@
 	</div>
 </body>
 </html>
-<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript">
+	function $(id){
+		return document.getElementById(id)
+	}
+	$("2616416").onclick=function(){
+		$("tobody").style.display = 'none';
+	}
+	var price=$("dataprice").innerHTML;
+	var goodsnum=$("goodsnum").innerHTML;
+	var allgoodsprice=$("allgoodsprice").innerHTML;
+	var pageup=$("pageup").innerHTML;
+	var shoulegoodsprice=$("shoulegoodsprice").innerHTML;
+		$("pageup").onclick=function(){
+			goodsnum++;
+			$("goodsnum").innerHTML=goodsnum;
+			allgoodsprice=parseFloat(price)*parseFloat(goodsnum);
+			$("allgoodsprice").innerHTML=allgoodsprice;
+			$("shoulegoodsprice").innerHTML=allgoodsprice;
+		}
+		$("pagedown").onclick=function(){
+			goodsnum--;
+			if($("goodsnum")>=0){
+				$("goodsnum").innerHTML=goodsnum;
+				allgoodsprice=parseFloat(price)*parseFloat(goodsnum);
+				$("allgoodsprice").innerHTML=allgoodsprice;
+				$("shoulegoodsprice").innerHTML=allgoodsprice;
+			}else{
+				$("goodsnum").innerHTML=0;
+				$("allgoodsprice").innerHTML=0;
+				$("shoulegoodsprice").innerHTML=0;
+			}
+		}
+				var choce=$("chocesome");
+				console.log(choce);
+			
+</script>
  
 
 	

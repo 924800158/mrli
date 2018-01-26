@@ -607,14 +607,15 @@
 						<div class="fl_l marr30">
 							排序规则：
 							<select name="condition" id="condition" disabled="disabled">
-								<option value="desc">倒叙</option>
-								<option value="asc">升序</option>
+								<option value="desc">升序</option>
+								<option value="asc">倒序</option>
 							</select>
 						</div>
 
 						<div class="fl_r pageNum">
 							<strong>
-								<span>986</span>
+								约
+								<span>8</span>
 								个结果
 							</strong>
 						</div>
@@ -625,7 +626,7 @@
 					<div class="goods-list-content ovf mart20">
 						<ul id="goodsListBox" class="goods-list-wrapper ovf">
 
-							<li class="fl_l ovf">
+							<!-- <li class="fl_l ovf">
 								<div id="list-car">
 									<a href="javascript:;">
 										<img src="../img/list_car.png" alt>
@@ -643,8 +644,8 @@
 								<a href="#" class="text-c block mart20 goods-tip">顺滑光泽防风立领男装冬季时尚夹克羽绒服外套</a>
 
 								<p class="text-c mart5"></p>
-							</li>
-
+							</li> -->
+<!-- 
 							<li class="fl_l ovf">
 								<div id="list-car">
 									<a href="javascript:;">
@@ -866,7 +867,7 @@
 								<a href="#" class="text-c block mart20 goods-tip">男装秋莱卡弹力休闲直筒牛仔长裤</a>
 
 								<p class="text-c mart5"></p>
-							</li>
+							</li> -->
 						</ul>
 
 						<div class="water-bar">点击加载更多</div>
@@ -978,8 +979,59 @@
 	</div>
 </body>
 </html>
-<script type="text/javascript" src="../js/index.js"></script>
- 
+<script src="../js/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $.ajax({
+           type:"get",
+            url:"getGoodsList.php",
+            success:function (data) {
+                showgoodsList(data);
+            },
+            dataType:"json"
+        });
+    });
+
+    function showgoodsList(datas) {
+        let $ulbox = $("#goodsListBox");
+        
+        for(let i=0;i<datas.length;i++){
+            //1、创建li
+            let str="<li class='fl_l ovf'><div id='list-car'><a href='javascript:;'></div><div class='goods-img'><a href='details.html'><img src='"+datas[i].goodsImg+"' data-true='../img/217427506E00_p1.jpg' data-toggle='../img/217427506E00_p1.jpg'></a><span class='bg-color-black color-white'>"+datas[i].goodsType+"</span></div>	<a href='#' class='text-c block mart20 goods-tip'>"+datas[i].goodsName+"</a><p class='text-c mart5'></p></li> ";
+            $ulbox.append(str);
+        }
+        
+    }
+</script>
+
+<!--  
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $.ajax({
+           type:"get",
+            url:"../php/getGoodsList.php",
+            success:function (data) {
+                showgoodsList(data);
+            },
+            dataType:"json"
+        });
+    });
+
+    function showgoodsList(datas) {
+        let $ulbox = $(".top-middle");
+        
+        for(let i=0;i<datas.length;i++){
+            //1、创建li
+            let str="<div class='top' style='float:left;margin-left:20px'><img src='"+datas[i].goodsImg+"'/>" +
+             	"<p style='color:#333'>"+datas[i].goodsType+"</p>" +
+                "<p style='color:#333'>"+datas[i].goodsName+"</p>" +
+                "<p style='color:#333'>"+datas[i].goodsPrice+"</p></div>";
+            $ulbox.append(str);
+        }
+        
+    }
+</script> -->
 
 	
 	
