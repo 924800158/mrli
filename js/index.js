@@ -57,78 +57,51 @@
  $('.left-btn').click(function(){
       i--;
       if (i==-1) {
-
          i=$('.ovf li').length-2;
-
         $('.ovf').css({left:-($('.ovf li').length-1)*950});
       }
-
       $('.ovf').stop().animate({left:-i*950},300);
       $('.point li').eq(i).addClass('active').siblings().removeClass('active');
-
      })
-      
-      
       //鼠标划入圆点
       $('.point li').mouseover(function(){
        var _index=$(this).index();
        $('.ovf').stop().animate({left:-_index*950},150);
        $('.point li').eq(_index).addClass('active').siblings().removeClass('active');
-   
  })
-  
  //定时器自动播放
  timer=setInterval(function(){
          i++;
       if (i==$('.ovf li').length) {
-
       i=1;
          $('.ovf').css({left:0});
       };
-      
         $('.ovf').stop().animate({left:-i*950},300);
-
       if (i==$('.ovf li').length-1) { 
-
          $('.point li').eq(0).addClass('active').siblings().removeClass('active');
       }else{
-
          $('.point li').eq(i).addClass('active').siblings().removeClass('active');
-
       }
- },1000)
-  
+ },3000)
  //鼠标移入，暂停自动播放，移出，开始自动播放
  $('.banner').hover(function(){ 
-
     clearInterval(timer);
-
  },function(){
-
         timer=setInterval(function(){
-
         i++;
       if (i==$('.ovf li').length) {
             i=1;
           $('.ovf').css({left:0});
-
       };
       
       $('.ovf').stop().animate({left:-i*950},300);
-
       if (i==$('.ovf li').length-1) { 
-
         $('.point li').eq(0).addClass('active').siblings().removeClass('active');
-
       }else{
-
          $('.point li').eq(i).addClass('active').siblings().removeClass('active');
-
       }
-     },1000)
+     },3000)
  })
-  
   });
-
 })(jQuery);
     
